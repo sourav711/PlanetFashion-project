@@ -1,0 +1,172 @@
+*{
+    font-family: 'Macondo', cursive;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tapestry', cursive;
+}
+body{
+    background-image: url('https://image.shutterstock.com/image-illustration/clothes-on-grunge-background-shelf-260nw-1867100056.jpg');
+    background-size: cover;
+  margin:0;
+  padding: 0;
+  font-family: sans-serif;
+ 
+}
+.container{
+    display:flex;
+    justify-content: flex-start;
+    height:80vh;
+    width:99vw;
+    
+
+}
+
+.heading{
+    
+   border: 2px solid black;
+    color:rgb(20, 20, 19);
+   position: absolute;
+   box-sizing: border-box;
+    border-radius: 10px;
+    width: 35vw;
+    height:105vh;
+    left:18%;
+    top:5%;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+   
+     }
+
+    
+       
+     h1{
+         margin:2px;
+         padding: 0 0 20px;
+         text-align: center;
+         font-size: 40px;
+         font-family: 'Times New Roman', Times, serif;
+         color: #702323;
+         font-style:oblique;
+
+     }
+     .inner{
+         display: flex;
+         flex-direction: column;
+     }
+  
+    .heading input{
+         width:100%;
+         margin-bottom: 15px;
+     }
+    .heading input[type="text"],input[type="email"], input[type="password"]
+     {
+         border:none;
+         border-bottom: 1px solid rgb(231, 106, 106);
+         background: transparent;
+         outline:none;
+         height:40px;
+         color:rgb(119, 76, 76);
+         font-size:16px;
+     }
+    .heading .submit
+     {
+         border:none;
+         outline: none;
+         height: 38px;
+         width:33vw ;
+         background: rgb(230, 144, 144);
+         color:rgb(32, 11, 11);
+         font-size: 18px;
+         border-radius: 20px;
+         text-align:center;
+     }
+    .heading .submit:hover{
+         cursor: pointer;
+         background: #ffc107;
+         color:#000;
+     }
+    .heading a{
+         text-decoration: none;
+         font-size: 16px;
+         line-height:20px;
+         color:rgb(20, 20, 20);
+     }
+    .heading a:hover{
+         color:purple;
+     }
+
+
+.gradient-border {
+  --border-width: 8px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  font-family: Lato, sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  background: rgb(219, 190, 190) ;
+    border-radius: var(--border-width);
+}
+
+  .gradient-border::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 84%, 81%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(200,85%,60%),
+      rgb(38, 207, 95)
+
+      
+    );
+    
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.waviy {
+    position: relative;
+    height: 400px;
+    width: 500px;
+    margin-left: 28%;
+    margin-top: 5%;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: rgb(66, 55, 55);
+    text-transform: uppercase;
+    animation: flip 5s infinite;
+    animation-delay: calc(.1s * var(--i));
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
